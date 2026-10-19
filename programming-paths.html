@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmēšanas profesijas</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #f1f5f9;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 55px 20px;
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            font-size: 17px;
+            color: #e0e7ff;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 35px auto;
+            padding: 0 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .professions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 14px;
+            padding: 24px;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #818cf8;
+        }
+
+        .card h2 {
+            color: #a5b4fc;
+            margin-bottom: 12px;
+            font-size: 21px;
+        }
+
+        .card p {
+            color: #cbd5e1;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 15px;
+            margin-bottom: 6px;
+            color: #67e8f9;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #312e81;
+            color: #c7d2fe;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 13px;
+            margin: 4px 3px 0 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+            background: #020617;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 29px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Programmēšanas profesijas</h1>
+    <p>Atklāj dažādus karjeras ceļus IT un programmēšanas pasaulē!</p>
+</header>
+
+<main class="container">
+    <section class="intro">
+        <h2>Izvēlies savu nākotnes profesiju</h2>
+        <p>Uzzini, ko dara dažādu jomu programmētāji un kādas prasmes viņiem vajadzīgas.</p>
+    </section>
+
+    <section class="professions">
+
+        <article class="card">
+            <h2>🌐 Front-end izstrādātājs</h2>
+            <p>Veido mājaslapu lietotāja saskarni, dizainu un interaktīvus elementus.</p>
+            <h3>Nepieciešamās prasmes</h3>
+            <p>HTML, CSS, JavaScript, responsīvs dizains.</p>
+            <h3>Populārās tehnoloģijas</h3>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">React</span>
+        </article>
+
+        <article class="card">
+            <h2>⚙️ Back-end izstrādātājs</h2>
+            <p>Izstrādā servera puses sistēmas, datu apstrādi un lietotņu loģiku.</p>
+            <h3>Nepieciešamās prasmes</h3>
+            <p>Programmēšana, API, datubāzes un drošība.</p>
+            <h3>Populārās tehnoloģijas</h3>
+            <span class="tag">Python</span>
+            <span class="tag">Java</span>
+            <span class="tag">Node.js</span>
+        </article>
+
+        <article class="card">
+            <h2>🖥️ Full-stack izstrādātājs</h2>
+            <p>Strādā gan ar lietotāja saskarni, gan servera puses risinājumiem.</p>
+            <h3>Nepieciešamās prasmes</h3>
+            <p>Front-end, back-end, API un datubāzes.</p>
+            <h3>Populārās tehnoloģijas</h3>
+            <span class="tag">JavaScript</span>
+            <span class="tag">SQL</span>
+            <span class="tag">React</span>
+        </article>
+
+        <article class="card">
+            <h2>📱 Mobilo lietotņu izstrādātājs</h2>
+            <p>Veido lietotnes viedtālruņiem un planšetdatoriem.</p>
+            <h3>Nepieciešamās prasmes</h3>
+            <p>Mobilo platformu izstrāde, lietotāja pieredze un API.</p>
+            <h3>Populārās tehnoloģijas</h3>
+            <span class="tag">Kotlin</span>
+            <span class="tag">Swift</span>
+            <span class="tag">Flutter</span>
+        </article>
+
+        <article class="card">
+            <h2>🎮 Spēļu izstrādātājs</h2>
+            <p>Programmē datorspēles, spēļu mehānikas un interaktīvas pasaules.</p>
+            <h3>Nepieciešamās prasmes</h3>
+            <p>Loģika, matemātika, fizika un programmēšana.</p>
+            <h3>Populārās tehnoloģijas</h3>
+            <span class="tag">C#</span>
+            <span class="tag">Unity</span>
+            <span class="tag">Unreal Engine</span>
+        </article>
+
+        <article class="card">
+            <h2>🤖 Mākslīgā intelekta izstrādātājs</h2>
+            <p>Veido viedas sistēmas, kas analizē datus, atpazīst modeļus un ģenerē rezultātus.</p>
+            <h3>Nepieciešamās prasmes</h3>
+            <p>Python, statistika, algoritmi un mašīnmācīšanās.</p>
+            <h3>Populārās tehnoloģijas</h3>
+            <span class="tag">Python</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">TensorFlow</span>
+        </article>
+
+        <article class="card">
+            <h2>🗄️ Datubāzu izstrādātājs</h2>
+            <p>Projektē un uztur datubāzes, nodrošinot datu pieejamību un kvalitāti.</p>
+            <h3>Nepieciešamās prasmes</h3>
+            <p>SQL, datu modelēšana, optimizācija un datu drošība.</p>
+            <h3>Populārās tehnoloģijas</h3>
+            <span class="tag">SQL</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">MySQL</span>
+        </article>
+
+        <article class="card">
+            <h2>🔐 Kiberdrošības speciālists</h2>
+            <p>Aizsargā sistēmas, tīklus un datus pret digitāliem apdraudējumiem.</p>
+            <h3>Nepieciešamās prasmes</h3>
+            <p>Tīklu darbība, operētājsistēmas, drošības principi un skriptēšana.</p>
+            <h3>Populārās tehnoloģijas</h3>
+            <span class="tag">Python</span>
+            <span class="tag">Linux</span>
+            <span class="tag">Bash</span>
+        </article>
+
+        <article class="card">
+            <h2>☁️ DevOps inženieris</h2>
+            <p>Automatizē programmatūras izstrādes, testēšanas un izvietošanas procesus.</p>
+            <h3>Nepieciešamās prasmes</h3>
+            <p>Linux, automatizācija, mākoņpakalpojumi un konteineri.</p>
+            <h3>Populārās tehnoloģijas</h3>
+            <span class="tag">Docker</span>
+            <span class="tag">Git</span>
+            <span class="tag">Kubernetes</span>
+        </article>
+
+        <article class="card">
+            <h2>🧪 Programmatūras testētājs</h2>
+            <p>Pārbauda programmatūru, atrod kļūdas un palīdz nodrošināt tās kvalitāti.</p>
+            <h3>Nepieciešamās prasmes</h3>
+            <p>Testēšanas metodes, uzmanība detaļām un automatizācija.</p>
+            <h3>Populārās tehnoloģijas</h3>
+            <span class="tag">Python</span>
+            <span class="tag">Selenium</span>
+            <span class="tag">Playwright</span>
+        </article>
+
+        <article class="card">
+            <h2>📊 Datu inženieris</h2>
+            <p>Veido sistēmas lielu datu apjomu apkopošanai, apstrādei un uzglabāšanai.</p>
+            <h3>Nepieciešamās prasmes</h3>
+            <p>SQL, Python, datu plūsmas un datu arhitektūra.</p>
+            <h3>Populārās tehnoloģijas</h3>
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Apache Spark</span>
+        </article>
+
+        <article class="card">
+            <h2>🛠️ Iegulto sistēmu programmētājs</h2>
+            <p>Programmē ierīces, sensorus, mikrokontrollerus un elektronikas sistēmas.</p>
+            <h3>Nepieciešamās prasmes</h3>
+            <p>C/C++, elektronikas pamati un aparatūras darbības izpratne.</p>
+            <h3>Populārās tehnoloģijas</h3>
+            <span class="tag">C</span>
+            <span class="tag">C++</span>
+            <span class="tag">Arduino</span>
+        </article>
+
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 Programmēšanas profesijas | Mācies, veido un attīsties!</p>
+</footer>
+
+</body>
+</html>
